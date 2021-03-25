@@ -3,7 +3,7 @@ import './App.css';
 
 import React, {useEffect, useState} from "react";
 
-import { Button, List, Collapse } from 'antd';
+import { Button, List, Collapse, Breadcrumb } from 'antd';
 const { Panel } = Collapse;
 
 
@@ -106,6 +106,7 @@ function App() {
       <div className="grid grid-cols-12">
         <div className={'col-span-full md:col-span-3 lg:col-span-2 border p-5'}>
 
+
             {/*<Button type={'primary'}>Submit</Button>*/}
           {/*<h1 className={'text-center text-3xl'}>Currently selected category is: {selectedCategory}</h1>*/}
           {/*  <ul>*/}
@@ -142,6 +143,17 @@ function App() {
         <div className={'col-span-full md:col-span-9 lg:col-span-10 border p-5'}>
 
             {/*<button className={'border p-2 pl-4 pr-4 bg-gray-200'} onClick={createNewQuestion}>New Question</button>*/}
+
+            {/*<Breadcrumb>*/}
+            {/*    <Breadcrumb.Item>Home</Breadcrumb.Item>*/}
+            {/*    <Breadcrumb.Item>*/}
+            {/*        <a href="">Application Center</a>*/}
+            {/*    </Breadcrumb.Item>*/}
+            {/*    <Breadcrumb.Item>*/}
+            {/*        <a href="">Application List</a>*/}
+            {/*    </Breadcrumb.Item>*/}
+            {/*    <Breadcrumb.Item>An Application</Breadcrumb.Item>*/}
+            {/*</Breadcrumb>*/}
 
             {selectedCategory && <div>
                 <input value={questionTxt} onChange={(ev) => {
